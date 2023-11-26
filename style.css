@@ -786,5 +786,5 @@ body{
 .accept:checked+label::before {
     border-color: #000;
     background-color: #fff;
-    background-image: url("/images/check.png");
+    background-image: url("images/check.png");
   }
