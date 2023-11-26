@@ -63,7 +63,7 @@ body{
 }
 
 .promo{
-    background:url('/images/auto.svg') center no-repeat;
+    background:url('images/auto.svg') center no-repeat;
     height: 862px;
     
 }
