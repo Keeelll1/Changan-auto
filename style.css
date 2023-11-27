@@ -1,3 +1,16 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
 
 body{
@@ -19,7 +32,6 @@ body{
     padding: 20px 0;
     display: flex;
     align-items: center;
-    height: 81px;
     justify-content: space-between;
 }
 
@@ -363,7 +375,10 @@ body{
 
 .complete-sets{
     margin-top: 100px;
-    height: 1601px;
+}
+
+.add-more-cards{
+    display: none;
 }
 
 .complete-sets-title-wrapper{
@@ -380,15 +395,36 @@ body{
     align-items: center;
 }
 
-.all-model-wrapper{
-    width: 410px;
-    height: 70px;
+.dropdown-menu{
+    position: relative;
+    z-index: 5;
+}
+
+.all-model-menu{
+    width: 310px;
     background: rgba(0, 0, 0, 0.05);
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 20px 20px;
+    position: absolute;
+    z-index: 4;
+    transition: .3s linear;
+    top: 0;
+    right: 0;
+}
+
+.all-model-wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.model-menu-list{
+    cursor: pointer;
+    display: none;
+}
+
+.model-menu-list.active{
+    display: block;
 }
 
 .all-model{
@@ -401,6 +437,10 @@ body{
     height: 15px;
     width: 15px;
     cursor: pointer;
+}
+
+.all-model-button.active{
+    transform: rotate(180deg);
 }
 
 .complete-sets-card-wrapper{
@@ -529,6 +569,10 @@ body{
     background: #FFF;
     top: 126px;
     left: 715px;
+}
+
+.model-menu-list{
+    margin-top: 8px;
 }
 
 .contacts-info-block-title{
