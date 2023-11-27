@@ -16,11 +16,13 @@ const btnOpen = document.querySelectorAll('.button'),
     })
 
 const downloadMore = document.querySelector('.donwload-more'),
-    addBlock = document.querySelector('.add-more-cards')
+    addBlock = document.querySelector('.add-more-cards'),
+    dropBlock = document.querySelector('.all-model-menu-2')
 
     downloadMore.addEventListener('click', () => {
         addBlock.style.display = 'block'
         downloadMore.style.display = 'none'
+        dropBlock.classList.toggle('active')
     })
 
 const dropBtn = document.querySelector('.all-model-button'),

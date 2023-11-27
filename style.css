@@ -11,6 +11,11 @@ li{
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+    color: #000;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
 
 body{
@@ -402,7 +407,7 @@ body{
 
 .all-model-menu{
     width: 310px;
-    background: rgba(0, 0, 0, 0.05);
+    background: #ebebeb;
     border-radius: 10px;
     padding: 20px 20px;
     position: absolute;
@@ -410,6 +415,14 @@ body{
     transition: .3s linear;
     top: 0;
     right: 0;
+}
+
+.all-model-menu-2{
+    display: none;
+}
+
+.all-model-menu-2.active{
+    display: block;
 }
 
 .all-model-wrapper{
