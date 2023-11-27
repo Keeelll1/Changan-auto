@@ -34,3 +34,18 @@ const dropBtn = document.querySelector('.all-model-button'),
             item.classList.toggle('active')
         })
     })
+
+const burgerMenu = document.querySelector('.span-wrapper'),
+    burgerContent = document.querySelector('.burger-menu-content'),
+    closeIcon = document.querySelector('.burger-menu-icon')
+
+    burgerMenu.addEventListener('click', () => {
+        burgerContent.classList.add('active')
+        burgerMenu.style.display = 'none'
+    })
+
+    closeIcon.addEventListener('click', () => {
+        burgerContent.classList.remove('active')
+        burgerMenu.style.display = 'flex'
+    })
+
