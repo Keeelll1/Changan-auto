@@ -558,6 +558,7 @@ body{
     padding: 30px;
     position: absolute;
     background: #FFF;
+    height: fit-content;
     top: 21%;
     left: 60%;
 }
@@ -892,7 +893,7 @@ body{
     .contacts-info-block-wrapper{
         top: 15%;
         left: 55%;
-        height: 500px;
+        height: fit-content;
         padding: 40px;
     }
 
@@ -985,6 +986,7 @@ body{
     }
 
     .contacts-info-block-wrapper{
+        height: fit-content;
         top: 10%;
         left: 50%;
     }
@@ -1195,6 +1197,7 @@ body{
     }
 
     .contacts-info-block-wrapper{
+        height: fit-content;
         padding: 30px;
     }
 
@@ -1213,5 +1216,10 @@ body{
 
     .all-footer-info{
         flex-direction: column;
+    }
+
+    .contacts-info-block-wrapper{
+        padding: 20px;
+        height: fit-content;
     }
   }
