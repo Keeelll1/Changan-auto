@@ -45,14 +45,8 @@ body{
     line-height: 27px;
     font-weight: 400;
     font-size: 18px;
-}
-
-.hedaer-text-first{
-    width: 230px;
-}
-
-.header-text-second{
-    width: 234px;
+    display: flex;
+    gap: 100px;
 }
 
 .header-text-item{
@@ -61,12 +55,11 @@ body{
     line-height: 27px;
 }
 
-.header-text-wrapper{
-    display: flex;
-    gap: 100px;
+.header-tel-link{
+    color: #FFF;
 }
 
-.button{
+.order-call{
     background: #1E3663;
     border-radius: 10px;
     border: none;
@@ -81,13 +74,12 @@ body{
 
 .promo{
     background:url('images/auto.svg') center no-repeat;
-    height: 862px;
-    
+    height: 862px;  
 }
 
 .promo-wrapper{
     display: flex;
-    gap: 179px;
+    justify-content: space-between;
     color: #fff;
     padding-top: 50px;
 }
@@ -95,16 +87,12 @@ body{
 .promo-title{
     font-weight: 700;
     font-size: 60px;
-    width: 546px;
-    height: 79px;
+    white-space: nowrap;
 }
 
 .promo-subtitle{
     font-size: 26px;
     font-weight: 600;
-    line-height: 43px;
-    width: 565px;
-    height: 86px;
 }
 
 .advantages{
@@ -120,7 +108,8 @@ body{
 
 .advantages-block-wrapper{
     display: flex;
-    gap: 30px;
+    justify-content: space-around;
+    margin-top: 60px;
 }
 
 .advantages-block{
@@ -135,12 +124,7 @@ body{
 
 .advantages-text{
     font-size: 21px;
-    line-height: 31.5px;
     font-weight: 400;
-}
-
-.advantages-block-wrapper{
-    margin-top: 60px;
 }
 
 .advantages-text-wrapper{
@@ -169,8 +153,7 @@ body{
 }
 
 .model-img{
-    width: 630px;
-    height: 525px;
+    width: 100%;
 }
 
 .model-range-row{
@@ -208,12 +191,13 @@ body{
 
 .auto-in-stock-content{
     display: flex;
+    align-items: center;
+    height: fit-content;
     gap: 30px;
 }
 
 .auto-in-stock-img{
-    height: 400px;
-    width: 630px;
+    width: 100%;
 }
 
 .auto-in-stock-text-content-title{
@@ -252,7 +236,7 @@ body{
 }
 
 .auto-in-stock-text-content-wrapper{
-    width: 660px;
+    width: 100%;
     padding: 37px 0;
 }
 
@@ -325,11 +309,6 @@ body{
     line-height: 48.36px;
 }
 
-.trade-in-text-wrapper{
-    width: 590px;
-    height: 172px;
-}
-
 .trade-in-text{
     margin-top: 60px;
     font-size: 21px;
@@ -338,8 +317,11 @@ body{
 }
 
 .line-img{
-    width: 285px;
-    height: 80px;
+    width: 100%;
+}
+
+.last-line-img{
+    width: 80px;
 }
 
 .trade-in-line-wrapper{
@@ -350,12 +332,6 @@ body{
     margin-top: 30px;
     font-weight: 400;
     font-size: 21px;
-    line-height: 29.4px;
-}
-
-.last-line-img{
-    width: 80px;
-    height: 80px;
 }
 
 .trade-in-line-wrapper{
@@ -436,6 +412,10 @@ body{
     display: none;
 }
 
+.line-eclipses{
+    display: flex;
+}
+
 .model-menu-list.active{
     display: block;
 }
@@ -458,27 +438,26 @@ body{
 
 .complete-sets-card-wrapper{
     margin-bottom: 30px;
-    height: 323px;
+    height: 100%;
     background-color: #F6F6F6;
 }
 
 .complete-sets-all-card-wrapper{
     display: flex;
-    align-items: center;
-    height: 323px;
     gap: 30px;
 }
 
-.complete-sets-card-img{
-    height: 323px;
+.complete-sets-card-content-img{
+    display: flex;
 }
 
-.complete-sets-card-content-img{
-    height: 323px;
+.complete-sets-card-img{
+    width: 100%;
 }
 
 .complete-sets-card-content-wrapper{
-    width: 810px;
+    width: 100%;
+    padding: 20px;
 }
 
 .complete-sets-card-content-title{
@@ -571,17 +550,16 @@ body{
 }
 
 .contacts-map{
-    width: 1290px;
+    width: 100%;
     height: 812px;
-    position: relative;
 }
 
 .contacts-info-block-wrapper{
-    padding: 60px;
+    padding: 30px;
     position: absolute;
     background: #FFF;
-    top: 126px;
-    left: 715px;
+    top: 21%;
+    left: 60%;
 }
 
 .model-menu-list{
@@ -597,7 +575,6 @@ body{
 .contacts-info-block-text{
     font-weight: 400;
     font-size: 21px;
-    line-height: 31.5px;
 }
 
 .contacts-info-block-button-wrapper{
@@ -628,26 +605,23 @@ body{
 
 .footer{
     background: #1E3663;
-    height: 512px;
     color: #FFF;
 }
 
 .all-footer-info{
     display: flex;
     justify-content: space-between;
-    height: 228px;
-    width: 1263px;
     padding-top: 100px;
-    margin-bottom: 60px;
+}
+
+.footer-text{
+    color: #FFF;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 .footer-link{
-    text-decoration: none;
     color: #FFF;
-    cursor: pointer;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 31.5px;
 }
 
 .footer-logo-title{
@@ -659,7 +633,7 @@ body{
     width: 226px;
 }
 
-.footer-menu{
+.footer-text-title{
     font-weight: 600;
     font-size: 27px;
     line-height: 36.88px;
@@ -672,31 +646,6 @@ body{
 
 .footer-info:last-child{
     margin-bottom: 0;
-}
-
-.footer-legal-info-title{
-    font-weight: 600;
-    font-size: 27px;
-    line-height: 36.88px;
-    margin-bottom: 20px;
-}
-
-.footer-legal-address{
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 29.4px;
-}
-
-.footer-legal-ogrn{
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 31.5px;
-}
-
-.footer-legal-inn{
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 31.5px;
 }
 
 .footer-politics-wrapper{
@@ -743,9 +692,8 @@ body{
 
 .popup-wrapper{
     width: 674px;
-    height: 502px;
     background: #fff;
-    padding: 50px 0;
+    padding: 50px 0 0 0;
 }
 
 .popup-cross{
@@ -844,4 +792,426 @@ body{
     border-color: #000;
     background-color: #fff;
     background-image: url("images/check.png");
+  }
+
+  @media (max-width: 1300px){
+    
+    .container{
+        max-width: 1250px;
+    }
+
+    .img-logo{
+        width: 130px;
+        height: 42px;
+    }
+
+    .hedaer-text-item{
+        font-size: 15px;
+    }
+
+    .order-call{
+        padding: 10px 25px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .promo-title{
+        font-size: 40px;
+    }
+    
+    .promo-subtitle{
+        font-size: 20px;
+    }
+
+    .promo{
+        background:url('images/auto.svg') center no-repeat;
+        height: 700px;  
+    }
+
+    .auto-in-stock-text-content-title,
+    .auto-in-stock-text-content-price{
+        font-size: 20px;
+    }
+
+    .specifications-text{
+        font-size: 18px;
+    }
+
+    .credit-link{
+        font-size: 18px;
+        text-align: end;
+    }
+
+    .watch-content{
+        padding: 10px 25px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .advantages-block{
+        width: 260px;
+    }
+
+    .complete-sets-card-first-content-title,
+    .complete-sets-card-second-content-title{
+        font-size: 22px;
+    }
+
+    .sets-card-button{
+        font-size: 18px;
+        padding: 15px 25px;
+        font-weight: 400px;
+    }
+
+    .contacts-map{
+        height: 750px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+
+    .container {
+        padding: 0 20px;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .container{
+        padding: 0 20px;
+    }
+
+    .promo{
+        background:url('images/auto.svg') center no-repeat;
+    }
+
+    .auto-in-stock-img{
+        width: 50%;
+        height: 50%;
+    }
+
+    .contacts-info-block-wrapper{
+        top: 15%;
+        left: 55%;
+        height: 500px;
+        padding: 40px;
+    }
+
+    .contacts-info-block-button-wrapper{
+        margin-top: 40px;
+    }
+    
+    .contacts-info-block-subtitle{
+        margin-top: 30px;
+    }
+    
+    .contacts-info-block-number{
+        margin-top: 20px;
+    }
+    
+    .contacts-info-block-time{
+        margin-top: 10px;
+    }
+    
+    .contacts-info-block-socials{
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    
+    .contacts-info-block-stocks{
+        margin-top: 20px;
+    }
+
+    .last-line-img{
+        width: 65px;
+    }
+  }
+
+  @media(max-width: 850px){
+
+    .advantages-text{
+        font-size: 18px;
+    }
+
+    .auto-in-stock-specifications-wrapper{
+        margin: 20px 0 0 0;
+    }
+
+    .watch-content{
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+
+    .last-line-img{
+        height: 50px;
+        width: 50px;
+    }
+
+    .all-model-menu{
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .complete-sets-card-first-content-title,
+    .complete-sets-card-second-content-title{
+        font-size: 18px;
+    }
+
+    .characteristic-sets-content{
+        margin: 20px 0;
+    }
+
+    .characteristic-text{
+        font-size: 18px;
+    }
+
+    .complete-sets-all-card-wrapper{
+        gap: 10px;
+    }
+
+    .characteristic-img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .complete-sets-card-content-wrapper{
+        padding: 10px;
+    }
+
+    .sets-card-button{
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .contacts-info-block-wrapper{
+        top: 10%;
+        left: 50%;
+    }
+
+    .contacts-info-block-title{
+        font-size: 25px;
+    }
+
+    .contacts-info-block-text{
+        font-size: 18px;
+    }
+
+    .contacts-socials{
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-text-title{
+        font-size: 18px;
+    }
+
+    .footer-text{
+        font-size: 15px;
+    }
+
+    .footer-logo-title{
+        width: 200px;
+    }
+
+    .auto-in-stock-img{
+        width: 50%;
+    }
+
+    .auto-in-stock-content{
+        gap: 10px;
+    }
+
+    .auto-in-stock-specifications-wrapper{
+        gap: 50px;
+    }
+  }
+
+  @media (max-width: 750px) {
+
+    .img-logo{
+        width: 100px;
+    }
+
+    .header-text-wrapper{
+        gap: 30px;
+    }
+
+    .hedaer-text-item{
+        font-size: 12px;
+    }
+    
+    .promo-title{
+        font-size: 28px;
+    }
+
+    .promo-subtitle{
+        font-size: 15px;
+    }
+
+    .advantages-img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .model-range-title{
+        font-size: 28px;
+    }
+
+    .model-title{
+        font-size: 20px;
+    }
+
+    .advantages-text{
+        font-size: 15px;
+    }
+
+    .auto-in-stock-bottom-content-wrapper{
+        margin: 20px;
+    }
+
+    .trade-in-title{
+        font-size: 28px;
+    }
+
+    .last-line-img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .trade-in-button{
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+
+    .trade-in-underline-text{
+        font-size: 15px;
+    }
+
+    .auto-in-stock-content{
+        flex-direction: column;
+    }
+
+    .auto-in-stock-img{
+        width: 100%;
+    }
+
+    .auto-in-stock-bottom-content-wrapper{
+        margin: 20px 0 0 0;
+    }
+
+    .complete-sets-all-card-wrapper{
+        flex-direction: column
+    }
+
+    .auto-in-stock-text-content-title,
+    .auto-in-stock-text-content-price{
+        font-size: 21px;
+    }
+
+    .complete-sets-card-first-content-title,
+    .complete-sets-card-second-content-title{
+        font-size: 21px;
+    }
+
+    .footer-logo-title{
+        width: 150px;
+    }
+
+    .trade-in-text{
+        font-size: 15px;
+        margin: 30px 0 0 0;
+        width: fit-content;
+    }
+
+    .complete-sets-title{
+        font-size: 27px;
+    }
+
+    .contacts-info-block-title{
+        font-size: 18px;
+    }
+
+    .contacts-info-block-text{
+        font-size: 15px;
+        margin: 15px 0 0 0;
+    }
+
+    .order-call{
+        font-size: 12px;
+    }
+
+    .contacts-info-block-button-wrapper{
+        margin: 20px 0 0 0;
+    }
+
+    .all-model-menu{
+        width: 210px;
+    }
+  }
+
+  @media (max-width:600px) {
+
+    .promo-wrapper{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .promo-title{
+        font-size: 30px;
+    }
+
+    .promo-subtitle{
+        font-size: 21px;
+    }
+
+    .header-btn{
+        display: none;
+    }
+
+    .line-eclipses{
+        display: none;
+    }
+
+    .trade-in-button-wrapper{
+        margin: 0;
+    }
+  }
+
+  @media (max-width:460px) {
+
+    .img-logo{
+        width: 70px;
+    }
+
+    .last-line-img{
+        width: 23px;
+        height: 23px;
+    }
+
+    .order-call{
+        padding: 10px 15px;
+    }
+
+    .contacts-info-block-wrapper{
+        padding: 30px;
+    }
+
+    .characteristic-sets-content{
+        gap: 20px;
+    }
+
+    .model-title{
+        white-space: nowrap;
+    }
+
+    .model-range-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .all-footer-info{
+        flex-direction: column;
+    }
   }

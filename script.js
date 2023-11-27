@@ -1,4 +1,4 @@
-const btnOpen = document.querySelectorAll('.button'),
+const btnOpen = document.querySelectorAll('.order-call'),
     btnClose = document.querySelector('.popup-cross'),
     popUp = document.querySelector('.popup'),
     overlay = document.querySelector('.overlay')
